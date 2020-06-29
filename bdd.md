@@ -26,4 +26,6 @@ Vous avez donc créer votre table et voyez maintenant un tableau avec les colone
 -Virtualité
 -Déplacer une colone
 
-Je vous conseille vivement (très, très vivement) de garder une colone (le première) pour la création d'un id (soit identifiant), cela vous permettra plus tard de pouvoir facilement cibler une ligne.
+Je vous conseille vivement (très, très vivement) de garder une colone (le première) pour la création d'un id (soit identifiant), cela vous permettra plus tard de pouvoir facilement cibler une ligne et vous pouvez, à la création, faire en sorte qu'elle s'auto-incrémente et n'aurez donc pas à vous occuper de trouver un id à chaque nouvelle ligne.
+Dans la colone **Nom** écrivez "id". 
+Dans la colone suivante, **Type**, laissez la valeur *INT* car elle signifie que ce champs traitera des entiers et c'est justement ce que nous voulons.
