@@ -28,4 +28,13 @@ Vous avez donc créer votre table et voyez maintenant un tableau avec les colone
 
 Je vous conseille vivement (très, très vivement) de garder une colone (le première) pour la création d'un id (soit identifiant), cela vous permettra plus tard de pouvoir facilement cibler une ligne et vous pouvez, à la création, faire en sorte qu'elle s'auto-incrémente et n'aurez donc pas à vous occuper de trouver un id à chaque nouvelle ligne.
 Dans la colone **Nom** écrivez "id". 
-Dans la colone suivante, **Type**, laissez la valeur *INT* car elle signifie que ce champs traitera des entiers et c'est justement ce que nous voulons.
+Dans la colone suivante, **Type**, laissez la valeur *INT* car elle signifie que ce champs traitera des entiers et c'est justement ce que nous voulons. On choisit de mettre le type *INT* lorsque nous allons faire un calcul sur sur cette valeur (dans le cas de l'id +1 à chaque ligne).
+Si ce n'est pas le cas, on choisira *VARCHAR* pour les chiffres/nombres sans calculs ou ce qui est en caractère. Ou encore *DATE* pour les dates.
+
+Nous allons à présent à passer à "Taille/valeurs". Ici nous définissons le nombre de caractères pris en compte (si on en met 5, seuls les 5 premiers seront pris en compte). Choisir des valeurs (cohérentes avec ce que l'o met dans les colones) permet d'augmenter l'efficacité du serveur et sécurise la base de donnée en minimisantla faille XSS.
+
+Null permet d'autoriser le non-remplissage d'un champs.
+
+Index permet de faire des clés étrangère (nous y reviendront).
+
+A_I signifie "auto-increment". Cela signifie que si vous cochez cette case, le champs choisit sera incrémenté par le serveur à chaque nouvelle entrée. C'est ce que nous allons faire pour notre colone **id**. Activer cette option vous permettra égalment de faire passer le champs en "primary", clé primaire.
